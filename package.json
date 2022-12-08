@@ -5,7 +5,8 @@
   "homepage": "https://github.com/Karlushyna/examples.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /examples/"
+    "build": "parcel build src/*.html --public-url /examples/",
+    "server": "json-server --watch db.json -p 4040 -d 300 "
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "json-server": "^0.17.1",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
