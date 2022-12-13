@@ -4,8 +4,10 @@
   "description": "",
   "homepage": "https://github.com/Karlushyna/examples.git",
   "scripts": {
+    "server": "nodemon server",
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /examples/"
+    "build": "parcel build src/*.html --public-url /examples/",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,20 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "axios": "^1.2.1",
+    "basiclightbox": "^5.0.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "modern-normalize": "^1.1.0",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.20",
+    "toastr": "^2.1.4",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
