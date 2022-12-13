@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:3000';
-// axios.defaults.baseURL = 'https://638506994ce192ac606aac6a.mockapi.io';
+// axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.baseURL = 'https://638506994ce192ac606aac6a.mockapi.io';
 
 export const createTodo = payload =>
   axios.post('./todos.js', payload).then(({ data }) => data);

@@ -6,7 +6,8 @@
   "scripts": {
     "server": "nodemon server",
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /examples/"
+    "build": "parcel build src/*.html --public-url /examples/",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
